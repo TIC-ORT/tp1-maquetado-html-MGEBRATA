@@ -13,8 +13,9 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
 .top{
-    height: 33vh;
+    height: 40vh;
     width: 100%;
     display: flex;
     
@@ -27,12 +28,12 @@ body{
 
         .Textos_Superiores{
             display: flex;
-            gap: 15vh;
-            margin-left: 40vh;
+            gap: 10vw;
+            margin-left: 25vw;
         }
 
         .Barra_Superior{
-            height: 30%;
+            height: 25%;
             width: 100%;
             display: flex;
 
@@ -47,16 +48,15 @@ body{
                     background-color: rgb(255, 200, 109);
                     height: 40%;
                     width: 75%;
-                    margin-left: 4vh;
+                    margin-left: 2.5vw;
                     margin-top: 1.5vh;
-                    margin-top: vh;
                     display: flex;
                 }
                 .Subtexto_Superior{
                     background-color: rgb(255, 255, 255);
                     height: 12%;
                     width: 75%;
-                    margin-left: 4vh;
+                    margin-left: 2.5vw;
                     margin-top: 1.5vh;
                     display: flex;
                 }
@@ -69,63 +69,80 @@ body{
                 display: flex;
                 align-items: center;
         
-                .Texto_Superior{
+                .Textos_Superiores{
                     background-color: rgb(255, 255, 255);
-                    height: 15%;
-                    width: 30%;
-                    margin-top: 3vh;
+                    height: 10%;
+                    width: 20%;
                     display: flex;
+                    margin-left: 2.5vw;
+                    margin-top: 5vh;
                 }
             }
         }
 
         .Barra_Inferior{
-            background-color: rgb(101, 106, 115);
-            height: 70%;
+            height: 75%;
             width: 100%;
             display: flex;
-            flex-direction: column;
-            align-items: center;
 
-            .Secciones_Top{
-                height: 100%;
-                width: 100%;
+            .Barra_Inferior1{
+                background-color: rgb(101, 106, 115);
+                height: 70%;
+                width: 40%;
                 display: flex;
-                justify-content: center;
+                flex-direction: column-reverse;
                 align-items: center;
 
-                .Seccion_Top{
+            }
+
+            .Barra_Inferior2{
+                background-color: rgb(101, 106, 115);
+                height: 70%;
+                width: 60%;
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+
+                .Secciones_Top{
                     height: 100%;
-                    width: 15%;
+                    width: 100%;
                     display: flex;
-                    flex-direction: column;
-                    margin-top: 4vh;
+                    justify-content: center;
+                    align-items: right;
+                    gap: 3vw;
     
-                    .Titulo_Top{
-                        background-color: rgb(255, 200, 109);
-                        height: 10%;
-                        width: 50%;
-                        margin-top: 2vh;
+                    .Seccion_Top{
+                        height: 100%;
+                        width: 25%;
                         display: flex;
+                        flex-direction: column;
+        
+                        .Titulo_Top{
+                            background-color: rgb(255, 200, 109);
+                            height: 8%;
+                            width: 50%;
+                            display: flex;
+                            margin-top: 3vh;
+                        }
+    
+                        .Texto_Top1{
+                            background-color: rgb(255, 255, 255);
+                            height: 4%;
+                            width: 100%;
+                            display: flex;
+                            margin-top: 1vh;
+                        }
+    
+                        .Texto_Top2{
+                            background-color: rgb(255, 255, 255);
+                            height: 4%;
+                            width: 50%;
+                            display: flex;
+                            margin-top: 1vh;
+                        }
                     }
-
-                    .Texto_Top1{
-                        background-color: rgb(255, 255, 255);
-                        height: 5%;
-                        width: 100%;
-                        margin-top: 2vh;
-                        display: flex;
-                    }
-
-                    .Texto_Top2{
-                        background-color: rgb(255, 255, 255);
-                        height: 5%;
-                        width: 50%;
-                        margin-top: 2vh;
-                        display: flex;
-                    }
-                }
-            } 
+                } 
+            }
         }
     }
 }
