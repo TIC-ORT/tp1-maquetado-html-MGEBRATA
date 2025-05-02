@@ -1,192 +1,206 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgb(242, 242, 242);
     display: flex;
     flex-direction: column;
-    padding: 1em;
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    height: 100vh;
+    padding: 0; /* Removed padding to avoid outer gap */
 }
 
+section {
+    width: 60%;
+}
 
-.top{
+/* === TOP SECTION === */
+.top {
     height: 40vh;
-    width: 100%;
     display: flex;
-    
-    .Barra_Top{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-
-
-        .Textos_Superiores{
-            display: flex;
-            gap: 10vw;
-            margin-left: 25vw;
-        }
-
-        .Barra_Superior{
-            height: 25%;
-            width: 100%;
-            display: flex;
-
-            .Barra_Superior1{
-                background-color: rgb(71, 79, 89);
-                height: 100%;
-                width: 30%;
-                display: flex;
-                flex-direction: column;
-    
-                .Titulo_Superior{
-                    background-color: rgb(255, 200, 109);
-                    height: 40%;
-                    width: 75%;
-                    margin-left: 2.5vw;
-                    margin-top: 1.5vh;
-                    display: flex;
-                }
-                .Subtexto_Superior{
-                    background-color: rgb(255, 255, 255);
-                    height: 12%;
-                    width: 75%;
-                    margin-left: 2.5vw;
-                    margin-top: 1.5vh;
-                    display: flex;
-                }
-            }
-    
-            .Barra_Superior2{
-                background-color: rgb(71, 79, 89);
-                height: 100%;
-                width: 70%;
-                display: flex;
-                align-items: center;
-        
-                .Textos_Superiores{
-                    background-color: rgb(255, 255, 255);
-                    height: 10%;
-                    width: 20%;
-                    display: flex;
-                    margin-left: 2.5vw;
-                    margin-top: 5vh;
-                }
-            }
-        }
-
-        .Barra_Inferior{
-            height: 75%;
-            width: 100%;
-            display: flex;
-
-            .Barra_Inferior1{
-                background-color: rgb(101, 106, 115);
-                height: 70%;
-                width: 40%;
-                display: flex;
-                flex-direction: column-reverse;
-                align-items: center;
-
-            }
-
-            .Barra_Inferior2{
-                background-color: rgb(101, 106, 115);
-                height: 70%;
-                width: 60%;
-                display: flex;
-                flex-direction: column-reverse;
-                align-items: center;
-
-                .Secciones_Top{
-                    height: 100%;
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: right;
-                    gap: 3vw;
-    
-                    .Seccion_Top{
-                        height: 100%;
-                        width: 25%;
-                        display: flex;
-                        flex-direction: column;
-        
-                        .Titulo_Top{
-                            background-color: rgb(255, 200, 109);
-                            height: 8%;
-                            width: 50%;
-                            display: flex;
-                            margin-top: 3vh;
-                        }
-    
-                        .Texto_Top1{
-                            background-color: rgb(255, 255, 255);
-                            height: 4%;
-                            width: 100%;
-                            display: flex;
-                            margin-top: 1vh;
-                        }
-    
-                        .Texto_Top2{
-                            background-color: rgb(255, 255, 255);
-                            height: 4%;
-                            width: 50%;
-                            display: flex;
-                            margin-top: 1vh;
-                        }
-                    }
-                } 
-            }
-        }
-    }
 }
 
-.middle{
+.Barra_Top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.Barra_Superior {
+    display: flex;
+    height: 25%;
+    width: 100%;
+}
+
+.Barra_Superior1 {
+    width: 30%;
+    background-color: rgb(71, 79, 89);
+    display: flex;
+    flex-direction: column;
+}
+
+.Titulo_Superior {
+    background-color: rgb(255, 200, 109);
+    height: 40%;
+    width: 75%;
+    margin-left: 2.5vw;
+    margin-top: 1.5vh;
+}
+
+.Subtexto_Superior {
+    background-color: white;
+    height: 10%;
+    width: 75%;
+    margin-left: 2.5vw;
+    margin-top: 1.5vh;
+}
+
+.Barra_Superior2 {
+    width: 70%;
+    background-color: rgb(71, 79, 89);
+    display: flex;
+    align-items: center;
+}
+
+.Textos_Superiores {
+    display: flex;
+    gap: 4vw;
+    margin-left: 12vw;
+    margin-top: 5vh;
+}
+
+.Texto_Superior {
+    background-color: white;
+    height: 12px;
+    width: 174px;
+}
+
+/* Fixed height to 75% of top */
+.Barra_Inferior {
+    display: flex;
+    height: 75%;
+    width: 100%;
+}
+
+.Barra_Inferior1,
+.Barra_Inferior2 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Barra_Inferior1 {
+    width: 40%;
+    background-color: rgb(101, 106, 115);
+    flex-direction: column-reverse;
+}
+
+.Barra_Inferior2 {
+    width: 60%;
+    background-color: rgb(101, 106, 115);
+    flex-direction: column-reverse;
+}
+
+.Secciones_Top {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    margin-top: 5vh;
+}
+
+.Seccion_Top {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.Titulo_Top {
+    background-color: rgb(255, 200, 109);
+    height: 8%;
+    width: 50%;
+    margin-top: 3vh;
+}
+
+.Texto_Top1, .Texto_Top2 {
+    background-color: white;
+    height: 3%;
+    margin-top: 1.2vh;
+}
+
+.Texto_Top1 {
+    width: 100%;
+}
+
+.Texto_Top2 {
+    width: 50%;
+}
+
+
+/* === MIDDLE SECTION === */
+.middle {
     height: 70vh;
-    width:100%;
     display: flex;
-    gap: 1em;
-
-    .left{
-        background-color:lightslategray;
-        height: 100%;
-        width: 50%;
-    }
-    .right{
-        background-color: lightgray;
-        height: 100%;
-        width: 50%;
-    }
 }
 
-.bottom{
-    height: 22vh;
+.left {
+    background-color: rgb(255, 200, 109);
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Textbox{
+    background-color: rgb(230, 229, 229);
     width: 100%;
-    display: flex;
-
-    .cuadradinho{
-        background-color: lightskyblue;
-        height: 100%;
-        aspect-ratio: 1/1;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .escudo{
-            height: 100%;
-        }
-    }
-    
-    .galeria_container{
-        background-color: whitesmoke;
-        height: 100%;
-        width: calc( 100% - 22vh );
-    }
+    height: 30%;
+    margin-top: 3vh;
 }
+
+.Texto_ML1, .Texto_ML2, .Texto_ML3{
+    background-color: rgb(101, 106, 115);
+    height: 4%;
+    margin-left: 3vw;
+}
+
+.Texto_ML1{
+    width: 55%;
+    margin-top: 3vh;
+}
+
+.Texto_ML2{
+    width: 65%;
+    margin-top: 2vh;
+}
+
+.Texto_ML3{
+    width: 35%;
+    margin-top: 2vh;
+}
+
+.Texto_ML4, .Texto_ML5{
+    background-color: rgb(255, 255, 255);
+    height: 2%;
+    margin-left: 3vw;
+}
+
+.Texto_ML4{
+    width: 65%;
+    margin-top: 2vh;
+}
+
+.Texto_ML5{
+    width: 35%;
+    margin-top: 2vh;
+}
+
+.right {
+    background-color: rgb(255, 255, 255);
+    width: 75%;
+}
+
