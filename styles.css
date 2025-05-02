@@ -10,14 +10,13 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    padding: 0; /* Removed padding to avoid outer gap */
+    padding: 0;
 }
 
 section {
     width: 60%;
 }
 
-/* === TOP SECTION === */
 .top {
     height: 40vh;
     display: flex;
@@ -75,11 +74,10 @@ section {
 
 .Texto_Superior {
     background-color: white;
-    height: 12px;
-    width: 174px;
+    height: 12px; /* Entra a "CLICK ACA PARA 10000 V-BUCKS" para entender porque esta en px. */
+    width: 174px; /* Bottom text. */
 }
 
-/* Fixed height to 75% of top */
 .Barra_Inferior {
     display: flex;
     height: 75%;
@@ -141,8 +139,6 @@ section {
     width: 50%;
 }
 
-
-/* === MIDDLE SECTION === */
 .middle {
     height: 70vh;
     display: flex;
