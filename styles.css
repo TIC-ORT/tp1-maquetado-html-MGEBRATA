@@ -155,46 +155,46 @@ section {
     flex-direction: column;
 }
 
-.Textbox{
+.Textbox {
     background-color: rgb(230, 229, 229);
     width: 100%;
     height: 30%;
     margin-top: 3vh;
 }
 
-.Texto_ML1, .Texto_ML2, .Texto_ML3{
+.Texto_ML1, .Texto_ML2, .Texto_ML3 {
     background-color: rgb(101, 106, 115);
     height: 4%;
     margin-left: 3vw;
 }
 
-.Texto_ML1{
+.Texto_ML1 {
     width: 55%;
     margin-top: 3vh;
 }
 
-.Texto_ML2{
+.Texto_ML2 {
     width: 65%;
     margin-top: 2vh;
 }
 
-.Texto_ML3{
+.Texto_ML3 {
     width: 35%;
     margin-top: 2vh;
 }
 
-.Texto_ML4, .Texto_ML5{
+.Texto_ML4, .Texto_ML5 {
     background-color: rgb(255, 255, 255);
-    height: 2%;
+    height: 1.5%;
     margin-left: 3vw;
 }
 
-.Texto_ML4{
+.Texto_ML4 {
     width: 65%;
     margin-top: 2vh;
 }
 
-.Texto_ML5{
+.Texto_ML5 {
     width: 35%;
     margin-top: 2vh;
 }
@@ -204,3 +204,53 @@ section {
     width: 75%;
 }
 
+.row {
+    width: 100%;
+    height: 23%;
+    display: flex;
+    margin-top: 4vh;
+}
+
+.item {
+    width: 19%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+}
+
+.box1, .box2 {
+    width: 100%;
+    height: 75%;
+}
+
+.box1 {
+    background-color: rgb(230, 229, 229);
+}
+
+.box2 {
+    background-color: rgb(255, 200, 109);
+}
+
+.Item_Text1, .Item_Text2, .Item_Text3 {
+    height: 3%;
+    margin-top: 1vh;
+}
+
+.Item_Text1 {
+    background-color: rgb(101, 106, 115);
+    width: 100%;
+}
+
+.Item_Text2, .Item_Text3 {
+    background-color: rgb(204, 203, 202);
+}
+
+
+.Item_Text2 {
+    width: 100%;
+}
+
+.Item_Text3 {
+    width: 50%;
+}
