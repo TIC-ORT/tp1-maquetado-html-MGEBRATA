@@ -1,0 +1,6 @@
+Ya agarre tu atencion?
+Bueno, lamento decirte que haz sido victima de clickbait!!!
+Lamentablemente no puedo proveer tal cosa, pero dejo esta file para avisar que la caja correspondiente a "Texto_Superior" no aparecia.
+Es por eso tuve que darle dimensiones en px en vez de porcentajes como todas las otras cajas.
+Osea que no solo al achicar la pestaña van a quedarse con las mismas dimensiones, sino que dado a que estoy usando un monitor 1440p,
+las cajas se van a ver mas grandes de lo que deberian, pero ni el diosGPT me lo pudo solucionar :/
